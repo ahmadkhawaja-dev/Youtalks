@@ -1,0 +1,53 @@
+.typing-container {
+  width: 285px;
+  min-height: 72px;
+  text-wrap: pretty;
+  border-radius: 30px;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1em;
+  text-align: left;
+  margin: 1em;
+}
+.typing {
+  position: relative;
+  float: left;
+}
+
+.typing span {
+  content: '';
+  animation: blink 1.5s infinite;
+  animation-fill-mode: both;
+  height: 7px;
+  width: 7px;
+  background: #1e1e1e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: .2s;
+  margin-left: 10px; /* 10px * 1.5 */
+}
+
+.typing span:nth-child(3) {
+  animation-delay: .4s;
+  margin-left: 20px; /* 10px * 3 */
+}
+
+@keyframes blink {
+  0% {
+    opacity: .1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .1;
+  }
+}

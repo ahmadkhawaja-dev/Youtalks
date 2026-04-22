@@ -1,0 +1,12 @@
+.ai-response {
+    width: 285px;
+    min-height: 72px;
+    text-wrap: pretty;
+    border-radius: 30px;
+    font-size: inherit;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 1em;
+    text-align: left;
+    margin: 1em;
+}

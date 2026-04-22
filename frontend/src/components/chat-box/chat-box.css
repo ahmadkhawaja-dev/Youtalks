@@ -1,0 +1,121 @@
+.chat-box {
+    width: 394px;
+    height: 72px;
+    border-radius: 30px;
+    border: 0.5px solid #1e1e1e;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chat-box_input--wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 394px;
+    height: fit-content;
+    border-radius: 30px;
+}
+
+.chat-box_input {
+    width: 394px;
+    height: fit-content;
+    padding: 0 50px;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+.chat-box_input:focus {
+    outline: none;
+}
+
+.chat-box_input--link {
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.chat-box_input--link:hover {
+    transform: scale(1.05);
+}
+
+.chat-box_input--link-disabled {
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    cursor: not-allowed;
+}
+
+/* Fixed submit button positioning and styling */
+button[type="submit"] {
+    position: absolute;
+    right: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+button[type="submit"]:disabled {
+    cursor: not-allowed;
+}
+
+.chat-box_input--send {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.chat-box_input--send-disabled {
+    width: 20px;
+    height: 20px;
+    cursor: not-allowed;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.chat-box_input--send:hover {
+    transform: scale(1.1);
+}
+
+.chat-box_input--loading {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+}
+
+.chat-box_loading {
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.link_detach {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff453a;
+}
+
+.cancel {
+    rotate: 45deg;
+    width: 14px;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.human-message {
+    width: 285px;
+    min-height: 72px;
+    text-wrap: pretty;
+    border-radius: 30px;
+    background: #F5F5F5;
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    float: right;
+    box-sizing: border-box;
+    padding: 0 1em;
+    text-align: left;
+    margin: 1em ;
+}

@@ -1,0 +1,16 @@
+.chat-page {
+    display: grid;
+    grid-template-rows: 7vh 71vh 15vh;
+    box-sizing: border-box;
+}
+.chat-page_header {
+    text-align: left;
+}
+.chat-page_body {
+    overflow-x: auto;
+}
+.chat-page_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
